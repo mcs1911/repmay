@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body{
+    
+    background-color: black;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+h2 {
+    color:antiquewhite;
+    text-align: center;
+}
+div{
+    display: block;
+    text-align: center;
+}
+p{
+    display: block;
+    align-content: center;
+}
+a{
+    color: aliceblue;
+}

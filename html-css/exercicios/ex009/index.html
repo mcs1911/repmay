@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>Criando Listas</title>
+</head>
+<body>
+    <h1>Criando listas</h1>
+    <h2>Lista Ordenada</h2>
+    <ol>
+        <li>Acordar</li>
+        <li>Dar beijinho no Sergito &#x2764;</li>
+        <li>Levantar</li>
+        <li>Ligar o Mac</li>
+    </ol>
+    <!-- Para mudar o estilo de ordenação da lista - pode ser numérica, como no caso, pode ser numeral, dentre outras
+    Também pode começar com outro numero ou ordenador que não o 1 ou A por exemplo. Para isso basta colocar uma tag start após o ol inicial-->
+    <ol type="I" start="5">
+        <li>Acordar</li>
+        <li>Dar beijinho no Sergito &#x2764;</li>
+        <li>Levantar</li>
+        <li>Ligar o Mac</li>
+    </ol>
+    <h2>Listas Não Ordenadas</h2>
+    <ul> <!-- Neste tipo de lista podemos ordenar o type por disc, square ou circle-->
+        <li>Batata frita</li>
+        <li>Pizza</li>
+        <li>Figo</li>
+        <li>Mirtilo</li>
+    </ul>
+    <h2>Combinando Listas</h2>
+    <h3>Meus mangás favoritos</h3>
+    <ol>
+        <li>Aventura</li>
+        <ol type="a">
+            <li>Cavaleiros do Zodiaco</li>
+            <li>Guerreiras Mágicas de Reyard</li>
+            <li>Bleach</li>
+        </ol>
+        <li>Romance</li>
+        <ol type="a">
+            <li>Merupuri</li>
+            <li>Sakura</li>
+            <li>Fushigui Yugui</li>
+        </ol>
+    </ol>
+    <h3>As matérias de QMC mais odiadas</h3>
+    <ol>
+        <li>Orgânica</li>
+        <ul type="square">
+            <li>Lab Marcus Sá</li>
+            <li>Lab Graça</li>
+            <li>Org Josihell</li>
+        </ul>
+        <li>Física</li>
+        <ul type="circle">
+            <li>Milmann</li>
+            <li>Tarço</li>
+            <li>FSC Minatti</li>
+        </ul>
+    </ol>
+    <h2>Listas de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação de conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a crianção de interatividade de um site.</dd>
+    </dl>
+</body>
+</html>

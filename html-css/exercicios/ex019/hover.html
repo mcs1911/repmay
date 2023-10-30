@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo do Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p{
+            display: none;
+        }
+        /* essa div > p significa que o p é filho da div... está dentro da div*/
+        div:hover{
+            color: red;
+        }
+        /* hover é uma pseudo-class é um estado que só se aplica dentro de uma determinada condição
+        Pseudo-class é representada por : (class é . e id é #)
+        */ 
+
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo do hover</h1>
+    <p>Passe o mouse em cima do texto</p>
+    <div>
+        Passe o mouse aqui!
+        <p>Sergito eu te amo &#x2763;</p>
+    </div>
+    <p>Fim do Exercício</p>
+    <p>Este estilo de hover e display none é o princípio dos menus, que só aparecem quando se passa o mouse por em cima</p>
+</body>
+</html>

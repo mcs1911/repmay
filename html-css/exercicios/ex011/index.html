@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Abra este site em diferentes dispositivos, ou aumente e diminua o tamanho do navegador para ver o efeito desta funcionalidade</p>
+
+    <picture>
+        <source media="(max-width: 650px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="./imagens/g.png" alt="imagem flexível">
+    </picture>
+    <!-- A ordem dos comandos IMPORTA para definir o que acontece se o tamanho limite for alcançado-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Exemplo de reproduçãao de áudio em HTML 5.</p>
+   <audio src="./audio/sample.mp3" controls ></audio>
+
+   <!-- O parâmetro autoplay ou loop também pode ser adicionado após o controls -->
+
+     <!-- Sem o controls ele toca automaticamente no meu navegador
+    Na verdade o formato do arquivo varia de acordo com o browser, pode ser MP3, WAV ou OGG-->
+
+    <!-- Outra forma de adicionar audio - MAIS INDICADA
+   <audio preload="metadata" autoplay controls loop>
+    - existem 3 tipos de preload
+    auto: PRECISA CARREGAR TODO O ARVIVO - O QUE PODE SER PÉSSIMO SE O ARQUIVO FOR GRANDE, DEMORA MUITO PARA CARREGAR O SITE
+    metadata: NÀO PRECIS CARREGAR TODO O ARQUIVO PRA DEPOIS INICIAR O AUDIO 
+    none: TAMBÉM NÃO É INDICADO
+    <source src="./audio/sample.mp3" type="audio/mpeg">
+    <source src="./audio/sample.ogg" type="audio/ogg">
+    <source src="./audio/sample.wav" type="audio/wav">
+    WAV é um tipo de arquivo com muita qualidade, logo é muito pesado e demora muito mais pra carregar (NÃO É INDICADO)
+   </audio>
+   -->
+   <p>Se o navegador não estiver conseguindo reproduzir o áudio <a href="./audio/sample.mp3">Clique aqui para baixar o aquivo</a></p>
+
+   <!--
+    Arquivos de alta qualidade são para download, não para carregar no site
+   -->
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <mark style="background-color: rgb(189, 189, 235);">document.getElementById('teste')</mark> é escrito com a linguagem JavaScript. <br>
+        Sem a tag code, as letras ficam "feias"tem tamanhos e espaços diferentes </p>
+    <p>O comando <mark style="background-color: rgb(189, 189, 235);"><code>document.getElementById('teste')</code></mark> é escrito com a linguagem JavaScript. <br>
+       Com a tag code, cada letra ocupa o mesmo espaço, facilitando a leitura </p>
+       <h3>Com a tag pre</h3>
+       <pre> <!-- A tag pre permite manter a formatação de identação-->
+        <code>
+            num = int(input('Digite um número))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR)
+            else:
+                print(f'O número {num} é ÍMPAR)
+            print('Fim do programa')
+        <!-- Se usar tab + shift com tudo seleciona, volta tudo como um pacote, se usar tag move tudo pra direita-->
+        </code>
+       </pre>
+       <h3>Sem a tag pre</h3>
+       <code>
+        num = int(input('Digite um número))
+        if num % 2 == 0:
+            print(f'O número {num} é PAR)
+        else:
+            print(f'O número {num} é ÍMPAR)
+        print('Fim do programa')
+       </code>
+       <h2>Citações Simples</h2>
+       Como diria o Sergito <q>Um pouco mais de terra neste carro e meus tios já começariam a brigar por ele...</q>
+       <h2>Citação Completa</h2>
+       <p>Como escreveu Walter Isaacson em seu livro, Steve Jobs</p>
+       <blockquote cite="https://www.google.com.bo/books/edition/Steve_Jobs/26ev_abfrU8C?hl=pt-BR&gbpv=0&bshm=rimc/1">
+        Based on more than forty interviews with Steve Jobs conducted over two years - as well as interviews with more than a hundred family members, friends, adversaries, competitors, and colleagues - this is the acclaimed, internationally bestselling biography of the ultimate icon of inventiveness.
+       </blockquote>
+       <h2>Abreviações</h2>
+       <p>Estou aprendendo <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, está bem divertido (por enquanto &#x1F61C;)</p>
+       <!-- A tag mais inútil segundo o professor, a que mostra o texto invertido...-->
+       <h2>Texto invertido</h2>
+       <p><bdo dir="rtl">Estou aprendendo HTML.</bdo></p>
+       <p>&#x1F643;</p>
+</body>
+</html>

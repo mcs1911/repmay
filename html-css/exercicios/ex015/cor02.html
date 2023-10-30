@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando gradientes</title>
+    <style>
+        /*No exercício foi utilizado * {} para a configuração global do CSS, e foi posto dentro desse seletor height 100% para preeencher toda a altura disponível*/
+        /*Já no body foi feito um background-attachment: fixed*/
+        #q01 {
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(to bottom, #5571E0, #569EE1, #55E0CA, #6655E0);  
+        }
+       /* Posso colocar porcentagens ao lado de cada cor
+       Tamb;em posso modificar a direção do gradiente - to right, left, top, 45deg, -45deg*/
+        p{
+            text-align: center;
+            color: antiquewhite;
+        }
+        #q02 {
+            width: 200px;
+            height: 200px;
+            background-image: radial-gradient(#5571E0, #569EE1, #55E0CA, #6655E0);
+        }
+        #q03 {
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(45deg, #5571E0, #569EE1, #55E0CA 25%, #6655E0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando gradientes</h1>
+    <div id="q01">
+        
+     <p>01</p>
+    </div>
+    <div id="q02">
+        <p>02</p>
+    </div>
+    <div id="q03">
+        <p>03</p>
+    </div>
+</body>
+</html>

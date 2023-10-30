@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url(./IDroid.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&family=Nosifer&display=swap');
+
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: justify;
+}
+header {
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(113, 220, 160), rgb(53, 124, 84),  rgb(3, 62, 3));
+    box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.256);
+    
+}
+h1#principal{
+
+    padding-top: 40px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.751);
+    margin-top: 0px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+}
+
+h2#h2{
+    padding: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.751);
+    font-size: 1em;
+    font: lighter;
+    font-family: 'Bebas Neue', sans-serif;
+}
+a:hover {
+    text-shadow: 2px 2px 2px black;
+    color: red
+}
+#links {
+    text-align: left;
+    padding: 10px;
+    color: white;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+main{
+    background-color: rgb(118, 249, 206);
+    
+}
+    
+section{
+    background-color: white;
+    width: 800px;
+    margin: auto;
+    padding: 20px 30px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.345);
+}
+
+h1 {
+    margin-top: 0px;
+    padding: 10px;
+    font-family: 'IDroid';
+    font-size: 2em;
+    color: darkgreen;
+}
+
+section > h2 {
+    background-image: linear-gradient(to right, rgb(199, 249, 221), white);
+    font-family: 'IDroid';
+    color: darkgreen;
+    
+}
+
+p{
+    text-indent: 30px;
+
+}
+
+img#boneco {
+    display: block;
+    margin: auto;
+}
+
+#video {
+    background-color: darkgreen;
+    padding: 30px;
+}
+
+h3{
+    background-color: rgb(36, 152, 86);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+div {
+    background-color:  rgb(175, 236, 201);
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.117);
+    margin-top: 0px;
+}
+ul {
+    display: inline-block;
+    padding-right: 50px;
+}
+
+p > a:hover {
+    font-weight: bolder;
+}
+
+p > a {
+    color: rgb(17, 156, 17);
+    font:400;
+}
+ul{
+    list-style: none;
+}
+
+
+li::before{
+   content: '✔ '; 
+}
+
+footer{
+    text-align: center;
+    color: white;
+    padding: 2px;
+    background-color: rgb(11, 77, 38);
+}
+footer > p {
+    margin: 0px;
+}

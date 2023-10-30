@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./bat-favicon.ico" type="image/x-icon">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Links Externos</h1> <!-- Links também são chamados de âncora, mais fácil de lembrar da tag a-->
+    <p>Para acessar o <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público do Curso em Vídeo no GitHub</a></p>
+    <p>Para acessar o canal do youtube do Curso em Vídeo, <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">Clique aqui</a></p>
+    <h1>Links Internos</h1>
+    <p>Você pode acessar a próxima página <a href="./pg02.html" rel="next">clicando aqui</a></p>
+    <p>Você também pode acessar a <a href="./noticias/pg03.html" rel="next">super terceira página</a></p>
+
+    <p>Assim criamos links internos, lembrando de <strong>fazer a rel pra indicar aos mecanismos de busca qual a ordem de indexação do nosso site</strong> &#x1F929; </p>
+    <h1>Links para Downloads</h1>
+    <ul>
+        <li>
+            <a href="./Libro_Plantas_Aromaticas_2013_1_compressed_compressed.pdf" download="Libro_Plantas_Aromaticas_2013_1_compressed_compressed.pdf">Baixe o Livro sobre Plantas</a>
+        </li>
+        <!-- Se apenas o comando download não funcionar colocar seguindo o iana type="application/pdf-->
+        <li>
+            <a href="./Libro_Plantas_Aromaticas_2013_1_compressed_compressed.zip" download="Libro_Plantas_Aromaticas_2013_1_compressed_compressed.zip">Se preferir baixe a versão zip</a>
+        </li>
+        <!-- Se deixar uma # no luhar de href significa link vazio, serve para exemplos e nãp leva a lugar algum-->
+        <h2>Para saber qual aplicação/tag usar <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"> descubra no iana.org</a></h2>
+        <!-- No caso para saber como fazer baixar o download automáticamente, depende muito do browser-->
+    </ul>
+</body>
+</html>

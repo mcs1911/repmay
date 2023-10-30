@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main{
+    width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 15px rgba(50, 96, 104, 0.5);
+    margin: auto;
+}
+body{
+    background-image: linear-gradient(to right, #CBFFE6, #AFE9FF, #BFB9FF);
+}
+h1{
+    text-align: center;
+    color: #6052f1;
+    text-shadow: 2px 2px 2px rgba(34, 3, 70, 0.46);
+}
+
+h2{
+    color: #d664a5;
+}
+/*A sombra funciona da seguinte maneira: primeiro número deslocamento a direita, deslocamento abaixo, espalhamento e cor*/
+p{
+    text-align: justify;
+}

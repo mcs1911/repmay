@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body{
+    background-color: #f1dcc0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #714914;
+}
+
+h1#principal {
+ text-align: center;
+ background-color: #714914;
+ color: #f1dcc0;
+}
+
+h2{
+    color: #362002;
+}
+
+/*
+em HTML é id = em CSS é #
+em HTML é class = em CSS é . 
+
+id é único
+class podem ser vários elementos!!!
+
+não dar nome/classificar pela forma, mas sim por sua funiconalidade
+
+Dá pra colocar mais de um destaque em um mesmo elemento
+Também dá pra colocar UM id e várias classes num mesmo elemebto
+Cuidar pois id sobrepõe as configurações de class
+*/
+.basico {
+    color: green;
+}
+.intermediario {
+    color: rgb(195, 195, 20);
+}
+.avancado {
+    color: red;
+}
+.destaque {
+    background-color: antiquewhite;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Esta linha é para habilitar os caracteres especiais, acentuação...-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML 5</title>
+</head>
+<body>
+    <h1> Vídeos Hospedados Localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="560" controls loop>
+        <source src="midias/gato.mp4" type="video/mp4">
+        <source src="midias/gato.m4v" type="video/mp4">
+        <source src="midias/gato.webm" type="video/webm">
+        <source src="midias/gato.ogv" type="video/ogg">
+    </video>
+    <p>Se o navegador não tem compatibilidade com a reprodução de video <a href="midias/gato.mp4" download="midias/gato.mp4">Baixe o Arquivo aqui!</a></p>
+    <!--
+        FORMATOS DE VÍDEOS MAIS ACEITOS PELOS NAVEGADORES:
+        OGV
+        MP4
+        WebM
+        M4V - mais compatível com YouTube e Vimeo
+    Os navegadores são compatíveis com diferentes formatos de mídias por isso colocamos várias opções em ordem crescente de tamanho...
+    -->
+    <p>MUITO IMPORTANTE: Acima de 1080p nada de hospedar dentro do próprio site, pois isso aumenta muito os custos… <br>
+    Essa configuração de vários arquivos multiplicados por inúmeros visitantes também é muito cara... &#x1F640;
+    </p>
+    <h1>Incorporando vídeos do YouTube</h1>
+    <p>Basta entrar no <a href="https://www.youtube.com/" target="_blank">site</a>, clicar na tecla compartilhar e em seguida na opção INCORPORAR, daí é só copiar o código e colar no html, cuidar para pegar vídeos sem direitos autorais, se não não funciona</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GQYVu94I998?si=dgW4f_joO2x7jCq6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos de Vimeo</h1>
+    <p>Mesmo processo que para o YouTube</p>
+    <iframe src="https://player.vimeo.com/video/315958992?h=548fe40c81" width="560" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

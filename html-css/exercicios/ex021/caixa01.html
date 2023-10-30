@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            background-color: aquamarine;
+            height: 300px;
+            width: 300px;
+
+            border:  10px solid lightseagreen;
+
+            padding: 10px;
+
+            /* como as 4 medidas de padding são 10px pode-se simplificar deta maneira, lembrando sempre de ler no sentido horário*/
+
+            margin: 20px auto 40px auto;
+            /* Para fazer com que a caixa fique centralizada é necessário colocar auto no right e left...*/
+
+            outline: 5px dotted greenyellow;
+        }
+        
+        a{
+            border: 10px solid rgb(169, 45, 211);
+
+            padding: 10px;
+
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, já os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona no DevTools</p>
+</body>
+</html>
+<!--A tag div é display block já a span é inline, ambas cumprem mais ou menos com a mesma função o que difere é o display e suas propriedades
+
+a block ocupa todo o view-port, já a inline ocupa apenas o tamanho do conteúdo-->
