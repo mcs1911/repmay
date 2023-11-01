@@ -7,11 +7,22 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(./imagens/wallpaper002.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;*/
+
+            background: black url(./imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
+
+        /*
+        SHORTHAND background
+        color > image > position > repeat > [size] > attachment
+
+        o size aqui não está funcionando, porém essas são as recomendações do W3C
+        */
 
         main {
             background-color: white;
@@ -21,6 +32,11 @@
             border: 2px solid blue;
             border-radius: 15px;
             margin-top: 20px;
+            text-align: justify;
+        }
+
+        main > h1 {
+            text-align: center;
         }
     </style>
 </head>
