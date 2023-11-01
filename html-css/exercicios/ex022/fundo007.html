@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-color: purple;
+            background-image: url(./imagens/target001.png);
+            height: 100vh;
+            padding: 20px;
+            background-size: 100% 100%;
+            position: relative;
+        }
+        #conteudo {
+            background-color: yellow;
+            background-image: url(./imagens/target001.png);
+            height: 200px;
+            width: 200px;
+            background-size: 100% 100%;
+            position: absolute;
+
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /* Quando o conteúdo ganha o atributo de posição absolute é possível mexer no seu posicionamento*/
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
