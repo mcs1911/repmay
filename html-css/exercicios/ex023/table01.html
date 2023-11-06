@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira tabela</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table#ex01{
+            border-collapse: collapse;
+            width: 400px;
+            text-align: center;
+
+        }
+        td {
+            border: 1px solid black;
+            
+        }
+        tr.escura {
+            background-color: lightcoral;
+        }
+
+        table#ex02 {
+            width: 200px;
+            height: 200px;
+            /* Ou se queremos fazer o alinhamento vertical - o text-align é alinhamento horizontal*/
+            text-align: center;
+            border-collapse: collapse;
+
+            vertical-align: bottom; /* se baseia em top middle e bottom Não tá funcionando pois deveria ser no td, porém se colocar lá vai pra todos a menos que se especifique outra classe*/
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+        HIERARQUIA DE TABELAS (simples)
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                TABLE DATA = dado de tabela 
+    -->
+    <h1> Minha primeira tabela</h1>
+    <table id="ex01">
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="escura">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr class="escura">
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td>B5</td>
+        </tr>
+        <tr>
+            <td>A6</td>
+        </tr>
+
+        <!-- as tag tr e td são empty e podem ser representadas só com abertura de tag-->
+    </table>
+    <h2>Outro exemplo</h2>
+    <table id="ex02">
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
