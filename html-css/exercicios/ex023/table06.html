@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas responsivas</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            
+        }
+
+        caption {
+            padding: 8px;
+            font-weight: bolder;
+            font-variant: small-caps;
+            font-size: 1.3em;
+            background-color: aquamarine;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(172, 246, 246);
+        }
+        thead {
+            background-color: black;
+            color: white;
+        }
+        div#container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta perspiciatis ipsum, suscipit cum adipisci earum tempore commodi perferendis, voluptatem totam id, nihil voluptates esse. Excepturi nulla obcaecati nisi accusamus sed!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis dolore voluptatem, debitis quidem quas ad numquam nesciunt laudantium ex! Adipisci, expedita! Sit quos nisi neque eum labore, assumenda placeat maxime!
+    </p>
+    <div id="container">
+        <table>
+            <caption>Tabelas responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tv</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>98</td>
+                    <td>36</td>
+                    <td>64</td>
+                    <td>35</td>
+                    <td>23</td>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <td>Radio</td>
+                    <td>15</td>
+                    <td>32</td>
+                    <td>55</td>
+                    <td>46</td>
+                    <td>87</td>
+                    <td>98</td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>35</td>
+                    <td>23</td>
+                    <td>33</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>

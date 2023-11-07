@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio da tabela de médias</title>
+    <style>
+
+        /*
+        Esse ex tá errado, pois falseei o tr das médias para parecer um título... ele deveria ser um th com uma class especial
+        */
+
+        table{
+            border-collapse: collapse;
+        }
+
+       th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgb(106, 98, 98);
+            font-weight: bold;
+            color: white;
+        }
+        th.dif {
+            background-color: white;
+            color: black;
+        }
+
+        tr.med {
+            background-color: rgb(106, 98, 98);
+            font-weight: bold;
+            color: white;
+            text-align: left;
+        }
+
+        td.disc {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio da tabela de médias</h1>
+    
+    <table>
+        <caption></caption>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th> 
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4" class="dif">Exatas</td>
+                <td class="disc">Matemática</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="disc">Física</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="disc">Química</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="disc">Biologia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+
+            <tr class="med">
+                <td colspan="4" style="text-align: left;"">Média de Exatas</td>
+                <td>0</td>
+            </tr>
+
+            <tr>
+                <th scope="rowgroup" rowspan="2" class="dif">Humanas</th>
+                <td class="disc">História</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="disc">Geografia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+           
+        </tbody>
+
+        <tfoot>
+            <tr class="med">
+                <td  colspan="4" style="text-align: left;">Média de Humanas</td>
+                <td>0</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
