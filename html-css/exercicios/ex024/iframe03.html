@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos suscipit voluptas illo beatae reprehenderit, explicabo labore molestiae omnis, eius qui reiciendis tempora quis debitis molestias quidem in distinctio. Repellat, enim!</p>
+    <iframe src="./paginasextras/pag03.html" sandbox="allow-forms allow-same-origin allow-scripts">
+        Infelizmente o seu navegador não é compatível
+    </iframe>
+
+    <!--
+        Por medidas de segurança podemos colocar parâmetros como sandbox="sandbox" (segurança no máx) que bloqueia toda captura de informação, protege contra ataques e roubos de infos. Porém não permite enviar os dados. 
+        Outra proteção é colocar o referrerpolicy="no-referrer"- porém isso bloqueia tudo!
+
+        Para poder capturar informações do formulário com certo grau de proteção: sandbox="allow-forms allow-same-origin allow-scripts"
+    -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere modi ab, quod odit fugiat ipsam! Tenetur, quisquam facere odit ex maiores exercitationem. Recusandae quasi incidunt molestiae dignissimos corporis rem doloribus?</p>
+    
+</body>
+</html>
