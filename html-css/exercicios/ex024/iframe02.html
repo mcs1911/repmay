@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de iframe de links externos e internos</title>
+
+    <style>
+        iframe {
+            border: 1px solid purple;
+            width: 98vw;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Teste de iframe de links externos e internos
+
+    </h1>
+
+    <p>Escolha a página que vc quer visualizar</p>
+
+    <ul>
+        <li> <a href="./paginasextras/pag01.html" target="iframe">Página 1</a></li>
+        <li><a href="./paginasextras/pag02.html" target="iframe">Página 2</a></li>
+        <li> <a href="../ex023/tabela04.html" target="iframe"> Página 3</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum optio provident ducimus neque, illum eius iusto, vel consequuntur ipsa, quam alias molestiae cum totam enim? Sapiente eum autem quisquam facilis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui officia, dolor itaque quos debitis odit reiciendis doloribus. Labore quibusdam distinctio sed laborum animi, sunt neque et ab saepe nesciunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo voluptatum ratione at esse cupiditate voluptas rerum vel dicta nesciunt deserunt quibusdam architecto animi placeat dolores, quam facilis. Id, consectetur distinctio.</p>
+
+    <iframe name="iframe" srcdoc="<h1>O recurso de srcdoc permite a criação de um html dentro do html</h1> <img src='./imagem/Design sem nome.png' width='300px'></img>" frameborder="0">
+
+        [Infelizmente o seu navegador não é compatível com o iframe &#x1F62D;]
+
+    </iframe>
+</body>
+</html>
