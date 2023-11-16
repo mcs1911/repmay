@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post"></form autocomplete="on">
+        <p>
+            <label for="iusu"> Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" placeholder="nome do usuário" autocomplete="username">
+
+            <!--
+                Quando o autocomplete esta on é necessário dizer pro navegador o que é cada input
+            -->
+        </p>
+        <p>
+            <label for="isenha"> Senha: </label>
+            <input type="password" name="senha" id="isenha" required size="10" minlength="8" autocomplete="current-password">
+            <!-- Também pode ser o new-password se é num formulário de cadastro-->
+        </p>
+        <p>
+            <input type="submit" value="Entrar">
+            <input type="reset" value="Limpar">
+        </p>
+
+</body>
+</html>
