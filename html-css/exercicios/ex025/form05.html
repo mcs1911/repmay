@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>
+        Input tipo radio e checkbox
+    </h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label><br>
+        </fieldset>
+        <!--
+            O input do tipo radio te permite fazer um checkbox exclusivo, ou vc marca uma possibilidade ou outra. Mas para isso é necessário que todos os elementos do tipo radio tenham o mesmo nome, ID DIFERENTES! Assim ou marca uma opção ou a outra.
+
+            O value é para ajudar na hora de mandar informação
+            
+            Se colocar o checked em alguma das  ops ela já aparece marcada por default
+        -->
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="ifut"><label for="ifut">Futebol</label><br>
+            <input type="checkbox" name="esbas" id="ibas"><label for="ibas">Basquete</label><br>
+            <input type="checkbox" name="esvol" id="ivol"><label for="ivol">Volêi</label><br>
+            <input type="checkbox" name="esnat" id="inat"><label for="inat">Natação</label><br>
+        </fieldset>
+       
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
